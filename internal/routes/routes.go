@@ -8,12 +8,12 @@ import (
 func InitRoutes() *mux.Router {
 	router := mux.NewRouter().StrictSlash(true)
 
-	router.HandleFunc("/GetAllList", handlers.GetAll).Methods("GET")
+	router.HandleFunc("/getAllList", handlers.GetAll).Methods("GET")
 	router.HandleFunc("/getGuest/{name}", handlers.GetGuest).Methods("GET")
-	router.HandleFunc("/GetConfirmed", handlers.GetConfirmed).Methods("GET")
-	router.HandleFunc("/GetNotConfirmed", handlers.GetNotConfirmed).Methods("GET")
-	router.HandleFunc("/AddGuest", handlers.AddGuest).Methods("POST")
-	router.HandleFunc("/UpdateConfirmed/{name}", handlers.UpdateConfirmed).Methods("PUT")
+	router.HandleFunc("/getConfirmed", handlers.GetConfirmed).Methods("GET")
+	router.HandleFunc("/getNotConfirmed", handlers.GetNotConfirmed).Methods("GET")
+	router.HandleFunc("/addGuest", handlers.AddGuest).Methods("POST")
+	router.HandleFunc("/updateConfirmed/{name}", handlers.UpdateConfirmed).Methods("PUT")
 
 	return router
 }
