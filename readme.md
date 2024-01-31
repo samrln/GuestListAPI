@@ -34,7 +34,7 @@ Este é um projeto de uma API simples para gerenciar uma lista de convidados par
 3. Execute o projeto:
 
     ```bash
-    go run ./cmd/main.go
+    go run ./cmd
     ```
 
 4. Acesse a API em `http://localhost:8080`
